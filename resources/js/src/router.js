@@ -67,6 +67,26 @@ const router = new Router({
 
 
         // =============================================================================
+        // Reportes
+        // =============================================================================
+        {
+          path: '/reportes/inventario',
+          name: 'reportes-inventario',
+          component: () => import('./views/admin/reportes/ReportesInventario.vue'),
+          meta: {
+            rule: 'editor'
+          }
+        },
+        {
+          path: '/reportes/ventas',
+          name: 'reportes-ventas',
+          component: () => import('./views/admin/reportes/ReportesVentas.vue'),
+          meta: {
+            rule: 'admin'
+          }
+        },
+
+        // =============================================================================
         // Application Routes
         // =============================================================================
         {
